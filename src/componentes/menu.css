@@ -1,0 +1,63 @@
+/* src/componentes/Menu.css */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .menu-toggle .menu-icon {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    margin: 6px 0;
+  }
+  
+  .menu-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-item {
+    margin: 0 15px;
+  }
+  
+  .menu-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-link:hover {
+    background-color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-list {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .menu-list.open {
+      display: flex;
+    }
+  
+    .menu-item {
+      margin: 10px 0;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  }
+  
